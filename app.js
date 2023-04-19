@@ -29,32 +29,39 @@
 //     }
 //     return sum
 // }
-// console.log(sumArray(arr));
+// console.log(sumArray(arr))
 
+var arr = [321, 15, 1098]
+function sum(arr) {
+    var num = 0
+    for (i = 0; i <= arr.length; i++) {
+        if (arr[i] >= 100 && arr[i] <= 999)
 
+            num += arr[i];
 
+        if (arr[i] >= 0 && arr[i] < 100)
 
-
-
-
-
-
-
-
-
-
-
-
-function reverseArray(arr) {
-    var reverse = [];
-    for (i = arr.length - 1; i >= 0; i--) {
-        reverse.push(arr[i]);
+            num -= arr[i]
+        if (arr[i] >= 999)
+            num -= arr[i]
     }
-    return reverse
+
+    return num
 }
-var arr = [1, 2, 3, 4, 5];
-var reverseArray = reverseArray(arr);
-console.log(reverseArray);
+console.log(sum(arr));
+
+
+
+// function reverseArray(arr) {
+//     var reverse = [];
+//     for (i = arr.length - 1; i >= 0; i--) {
+//         reverse.push(arr[i]);
+//     }
+//     return reverse
+// }
+// var arr = [1, 2, 3, 4, 5];
+// var reverseArray = reverseArray(arr);
+// console.log(reverseArray);
 
 
 
