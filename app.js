@@ -15,12 +15,24 @@
 // }
 // console.log(power(5, 2));
 
-function sum(num) {
-    if (num % 2 === 0) {
-        return "even";
-    } else {
-        return "odd";
-    }
+var arr = [1, 2, 3, 4, 5]
+function sumArray(arr) {
+    var sum = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            sum += arr[i];
+        }
+        if (arr[i] % 2 !== 0) {
+            sum -= arr[i];
+        }
 
+    }
+    return sum
 }
-console.log(sum(5));
+console.log(sumArray(arr));
+
+
+
+
+
+
