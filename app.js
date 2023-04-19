@@ -15,21 +15,48 @@
 // }
 // console.log(power(5, 2));
 
-var arr = [1, 2, 3, 4, 5]
-function sumArray(arr) {
-    var sum = 0;
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            sum += arr[i];
-        }
-        if (arr[i] % 2 !== 0) {
-            sum -= arr[i];
-        }
+// var arr = [1, 2, 3, 4, 5]
+// function sumArray(arr) {
+//     var sum = 0;
+//     for (i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             sum += arr[i];
+//         }
+//         if (arr[i] % 2 !== 0) {
+//             sum -= arr[i];
+//         }
 
+//     }
+//     return sum
+// }
+// console.log(sumArray(arr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function reverseArray(arr) {
+    var reverse = [];
+    for (i = arr.length - 1; i >= 0; i--) {
+        reverse.push(arr[i]);
     }
-    return sum
+    return reverse
 }
-console.log(sumArray(arr));
+var arr = [1, 2, 3, 4, 5];
+var reverseArray = reverseArray(arr);
+console.log(reverseArray);
+
+
 
 
 
